@@ -5,6 +5,9 @@
 
 <body>
 
+  <?php show_admin_bar( true ); ?>
+  <?php get_footer(); ?>
+
 </body>
 
 </html>
