@@ -1,1 +1,6 @@
-<?php wp_head(); ?> <body> <?php show_admin_bar( true ); ?> <?php wp_footer(); ?></body>
+<?php
+  include("header.php");
+  show_admin_bar( true );
+  include("navigation.php");
+  wp_footer();
+?>

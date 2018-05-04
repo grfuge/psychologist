@@ -1,0 +1,50 @@
+.navigation {
+  background: #4682b4;
+  height: 160px;
+  position: fixed;
+  top: 0;
+  font-family: "Open Sans Condensed";
+  @include screenMedium {
+    height: 96px;
+  }
+  &--container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include screenMedium {
+      flex-wrap: nowrap;
+    }
+    &--logo {
+      a {
+        display: block;
+        height: 96px;
+      }
+      @include screenMedium {
+        left: 0;
+        position: absolute;
+      }
+    }
+    &--items {
+      height: 64px;
+      display: flex;
+      position: relative;
+      a {
+        display: block;
+        height: 100%;
+        line-height: 64px;
+        padding: 0 4px;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    @include screenMedium {
+      height: 96px;
+      a {
+        line-height: 96px;
+      }
+    }
+  }
+}
