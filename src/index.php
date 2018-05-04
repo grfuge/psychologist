@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-
-<?php include("inc/shared/_head.php"); ?>
+<?php wp_head(); ?>
 
 <body>
-
   <?php show_admin_bar( true ); ?>
-  <?php get_footer(); ?>
 
-</body>
-
-</html>
+  <?php wp_footer(); ?>

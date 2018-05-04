@@ -1,1 +1,1 @@
-<!DOCTYPE html><html lang="en"> <?php include("inc/shared/_head.php"); ?> <body></body></html>
+<?php wp_head(); ?> <body> <?php show_admin_bar( true ); ?> <?php wp_footer(); ?></body>
