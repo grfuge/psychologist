@@ -1,0 +1,30 @@
+.home-articles-fill {
+  background: #f8f8f8;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.home-articles {
+  text-align: center;
+  &--items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &--item {
+      &:hover p {
+        background: $color-secondary;
+      }
+      img {
+        display: block;
+      }
+      p {
+        height: 48px;
+        background: $color-main;
+        color: #fff;
+        line-height: 48px;
+        margin-top: 0;
+        transition: background 30ms;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.home-contact-fill {
+  background: url("../img/background/intro-bg__micro.jpg") no-repeat;
+  background-size: cover;
+  height: 640px;
+  padding: 32px 0 0 0 !important;
+  text-align: center;
+}
+
+.home-contact {
+  height: 100%;
+  padding: 0 !important;
+  position: relative;
+  &--section {
+    &--item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: left;
+      padding-bottom: 16px;
+      tr {
+        td {
+          &:first-of-type {
+            display: block;
+            box-sizing: border-box;
+            padding-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  &--questionnaire {
+    margin-top: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+    .link {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.services-sechedule-fill {
+  background: url("../img/background/rocks__micro.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.services-schedule {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  &--items {
+    &--item {
+      p {
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}

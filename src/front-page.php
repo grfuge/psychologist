@@ -1,7 +1,10 @@
 <?php
   include("header.php");
-  show_admin_bar( false );
   include("navigation.php");
   include("inc/home/_hero.php");
-  wp_footer();
+  include("inc/home/_home-services.php");
+  include("inc/home/_home-stories.php");
+  include("inc/home/_home-articles.php");
+  include("inc/home/_home-contact.php");
+  include("footer.php");
 ?>

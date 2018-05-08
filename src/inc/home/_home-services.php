@@ -1,10 +1,35 @@
 <section class="container-fill home-services-fill">
   <div class="container home-services">
-    <h1>Lorem, ipsum dolor.</h1>
+    <h1>I help treat&hellip;</h1>
     <div class="home-services--items">
 
+      <div class="home-services--items--item">
+        <img src="<?php bloginfo('template_url'); ?>/img/people/depression.jpg" alt="">
+        <p>Depression</p>
+      </div>
+
+      <div class="home-services--items--item">
+        <img src="<?php bloginfo('template_url'); ?>/img/people/anxiety.jpg" alt="">
+        <p>Anxiety</p>
+      </div>
+
+      <div class="home-services--items--item">
+        <img src="<?php bloginfo('template_url'); ?>/img/people/addictions.jpg" alt="">
+        <p>Addictions</p>
+      </div>
+
+      <div class="home-services--items--item">
+        <img src="<?php bloginfo('template_url'); ?>/img/people/personality-disorders.jpg" alt="">
+        <p>Personality Disorders</p>
+      </div>
+
+      <div class="home-services--items--item">
+        <img src="<?php bloginfo('template_url'); ?>/img/people/eating-disorders.jpg" alt="">
+        <p>Eating Disorders</p>
+      </div>
+
     </div>
-    <h1>Lorem, ipsum dolor.</h1>
-    <a href="#">View All Services</a>
+    <h1>&hellip;and many other issues.</h1>
+    <a class="link" href="#">View All Services</a>
   </div>
 </section>

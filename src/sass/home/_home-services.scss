@@ -1,0 +1,29 @@
+.home-services-fill {
+  background: #f8f8f8;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.home-services {
+  text-align: center;
+  &--items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &--item {
+      display: block;
+      img {
+        display: block;
+      }
+      p {
+        width: 224px;
+        height: 40px;
+        background: #333;
+        color: #fff;
+        margin-top: 0;
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+  }
+}

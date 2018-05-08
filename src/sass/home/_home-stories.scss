@@ -1,0 +1,18 @@
+.home-stories {
+  padding-top: 32px;
+  h1 {
+    margin-bottom: 48px;
+  }
+  &--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &--item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+  }
+}

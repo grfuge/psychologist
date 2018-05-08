@@ -1,0 +1,20 @@
+.contact-form {
+  &--prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &--form {
+    label {
+      display: block;
+    }
+    input,
+    textarea {
+      padding: 0;
+      width: 296px;
+    }
+    textarea {
+      resize: none;
+    }
+  }
+}

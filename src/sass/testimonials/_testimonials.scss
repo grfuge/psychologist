@@ -1,0 +1,30 @@
+.testimonials-fill {
+  background: #f8f8f8;
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+
+.testimonials {
+  h1 {
+    margin-bottom: 48px;
+  }
+  &--items {
+    display: flex;
+    flex-wrap: wrap;
+    &--item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 32px;
+      p {
+        &:first-of-type {
+          margin-bottom: 4px;
+        }
+        &:last-of-type {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}

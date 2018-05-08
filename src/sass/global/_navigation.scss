@@ -1,13 +1,32 @@
+.navigation--logo {
+  position: relative;
+  z-index: 1000;
+  background: $color-main;
+  height: 64px;
+  text-align: center;
+  a {
+    display: inline-block;
+    height: 64px;
+  }
+  @include screenMedium {
+    left: 0;
+    position: absolute;
+  }
+}
+
 .navigation {
-  background: #4682b4;
-  height: 160px;
-  position: fixed;
+  position: sticky;
+  z-index: 1000;
+  background: $color-main;
+  height: 64px;
   top: 0;
   font-family: "Open Sans Condensed";
+  font-size: 1.2rem;
   @include screenMedium {
-    height: 96px;
+    height: 64px;
   }
   &--container {
+    padding: 0 !important;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -17,33 +36,35 @@
     @include screenMedium {
       flex-wrap: nowrap;
     }
-    &--logo {
-      a {
-        display: block;
-        height: 96px;
-      }
-      @include screenMedium {
-        left: 0;
-        position: absolute;
-      }
-    }
     &--items {
       height: 64px;
+      width: 100%;
       display: flex;
+      align-items: center;
       position: relative;
+      text-align: center;
       a {
         display: block;
         height: 100%;
+        width: 100%;
         line-height: 64px;
-        padding: 0 4px;
+        padding: 0 8px;
         color: #fff;
         text-decoration: none;
       }
-    }
-    @include screenMedium {
-      height: 96px;
-      a {
-        line-height: 96px;
+      div {
+        width: 100%;
+        max-width: 64px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @include screenMedium {
+        height: 96px;
+        a {
+          line-height: 96px;
+        }
       }
     }
   }
