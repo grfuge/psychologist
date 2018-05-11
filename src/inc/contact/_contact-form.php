@@ -1,14 +1,10 @@
-<section class="container-fill contact-form-fill">
-  <div class="container contact-form">
-    <h1>Contact</h1>
+<section class="container contact-form">
+  <h1>Contact</h1>
+  <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam accusantium officia ullam magnam repellendus?</p>
+  <div class="contact-form--items">
     <div class="contact-form--prices">
-
       <div class="contact-form--prices--item">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam accusantium officia ullam magnam repellendus?</p>
-      </div>
-
-      <div class="contact-form--prices--item">
-        <span>Consultation Fees</span>
+        <strong>Consultation Fees</strong>
         <table>
           <tr>
             <td>Half Hour</td>
@@ -20,9 +16,8 @@
           </tr>
         </table>
       </div>
-
       <div class="contact-form--prices--item">
-        <span>Therapy Hourly Rates</span>
+        <strong>Therapy Hourly Rates</strong>
         <table>
           <tr>
             <td>Skype</td>
@@ -42,19 +37,19 @@
     </div>
     <form class="contact-form--form">
 
-      <label for="">Subject</label>
+      <p>Subject</p>
       <input type="text">
 
-      <label for="">Your Name</label>
+      <p>Your Name</p>
       <input type="text">
 
-      <label for="">Your Email</label>
+      <p>Your Email</p>
       <input type="text">
 
-      <label for="">Message</label>
+      <p>Message</p>
       <textarea name="" id="" cols="30" rows="10"></textarea>
 
-      <input type="submit">
+      <input class="contact-form--form--submit" type="submit">
 
     </form>
   </div>

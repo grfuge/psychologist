@@ -1,19 +1,33 @@
 .services-sechedule-fill {
-  background: url("../img/background/rocks__micro.jpg") no-repeat;
+  background-image: url("../img/background/rocks__micro.jpg");
   background-size: cover;
+  background-position: center center;
   position: relative;
+  @include screenSmall {
+    background-image: url("../img/background/rocks__medium.jpg");
+  }
+  @include screenLarge {
+    background-image: url("../img/background/rocks__full.jpg");
+  }
 }
 
 .services-schedule {
   background: rgba(0, 0, 0, 0.55);
   color: #fff;
   &--items {
+    @include screenSmall {
+      display: flex;
+    }
     &--item {
+      box-sizing: border-box;
+      padding: 0 8px;
       p {
         &:first-of-type {
           margin-top: 0;
+          margin-bottom: 0;
         }
         &:last-of-type {
+          margin-top: 8px;
           margin-bottom: 32px;
         }
       }

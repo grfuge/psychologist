@@ -1,9 +1,33 @@
 .services-fill {
-  background: #f8f8f8;
+  background: #f3f3f3;
+  @include screenLarge {
+    background: none;
+  }
 }
 
 .services {
   padding-top: 32px;
   padding-bottom: 64px;
   text-align: center;
+  @include screenLarge {
+    padding-bottom: 32px;
+    &:last-of-type {
+      padding-bottom: 80px;
+    }
+  }
+  &--items {
+    @include screenLarge {
+      display: flex;
+      justify-content: center;
+    }
+    &--item {
+      @include screenLarge {
+        margin: 0 16px;
+        box-sizing: border-box;
+        padding: 0 32px;
+        background: #f3f3f3;
+        max-width: 420px;
+      }
+    }
+  }
 }

@@ -31,7 +31,7 @@
         </tr>
       </table>
 
-      <a href="" class="link">Schedule a Consultation</a>
+      <a href="<?php echo esc_url(site_url('/contact')); ?>" class="link">Schedule a Consultation</a>
 
     </div>
 

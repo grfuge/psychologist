@@ -7,12 +7,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include screenLarge {
+      flex-wrap: nowrap;
+    }
     &--item {
+      text-align: center;
+      margin-bottom: 64px;
+      max-width: 640px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      text-align: center;
-      margin-bottom: 64px;
+      h4 {
+        box-sizing: border-box;
+        padding: 0 32px;
+        @include screenLarge {
+          margin-top: 0;
+        }
+      }
+      p {
+        max-width: 480px;
+        box-sizing: border-box;
+        padding: 0 32px;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 <section class="container articles">
   <?php get_sidebar(); ?>
-  <div class="container articles--posts">
+  <div class="container articles--posts article container">
     <h1>Most Recent Articles</h1>
     <?php
       if ( get_query_var('paged') ) {
@@ -26,24 +26,24 @@
       <ul class="articles--posts--items">
         <?php while( $query->have_posts() ) : $query->the_post(); ?>
 
-        <li class="articles--posts--item">
-          <a class="articles--posts--item--link" href="<?php the_permalink(); ?>">
+        <li class="articles--posts--items--item">
+          <a class="articles--posts--items--item--link" href="<?php the_permalink(); ?>">
             <?php the_title(); ?>
           </a>
-          <p class="articles--posts--item--info">
-            <span class="articles--posts--item--time">
+          <p class="articles--posts--items--item--info">
+            <span class="articles--posts--items--item--time">
               <?php the_time('F jS, Y'); ?> in
             </span>
-            <span class="articles--posts--item--category">
+            <span class="articles--posts--items--item--category">
               <?php the_category(', '); ?>
             </span>
-            <span class="articles--posts--item--edit">
+            <span class="articles--posts--items--item--edit">
               <?php edit_post_link(__('Edit'), ''); ?>
             </span>
           </p>
-          <p class="articles--posts--item--excerpt">
-            <?php the_excerpt(); ?>
-          </p>
+          <div class="articles--posts--items--item--excerpt">
+            <?php echo the_excerpt(); ?>
+          </div>
         </li>
 
         <?php

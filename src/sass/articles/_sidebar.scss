@@ -1,0 +1,21 @@
+.sidebar {
+  padding-top: 32px;
+  width: 256px !important;
+  position: relative;
+  display: block;
+  &--title {
+    margin-bottom: 8px !important;
+  }
+  &--list {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+    line-height: 1.2rem;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

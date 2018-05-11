@@ -1,0 +1,21 @@
+.about-section {
+  position: relative;
+  padding-bottom: 32px;
+  &:after {
+    content: "";
+    height: 1px;
+    width: calc(100% - 32px);
+    background: #ddd;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    @include screenSmall {
+      width: calc(100% - 32px);
+      left: 16px;
+    }
+    @include screenMedium {
+      width: calc(100% - 64px);
+      left: 32px;
+    }
+  }
+}

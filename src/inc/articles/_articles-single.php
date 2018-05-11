@@ -1,6 +1,6 @@
 <section class="container articles articles-single">
   <?php get_sidebar(); ?>
-  <div class="articles-single--content">
+  <div class="articles-single--content article container">
     <a class="articles-single--return" href="<?php echo esc_url(site_url('/articles')); ?>">&lt; View All Posts</a>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div <?php post_class() ?> id="post-
@@ -8,15 +8,15 @@
       <h2>
         <?php the_title(); ?>
       </h2>
-      <p>
-        <span class="blog-list--item--time">
+      <p class="articles-single--item">
+        <span class="articles-single--item--time">
           Posted
           <?php the_time('F jS, Y'); ?> in
         </span>
-        <span class="blog-list--item--category">
+        <span class="articles-single--item--category">
           <?php the_category(', '); ?>
         </span>
-        <span class="blog-list--item--edit">
+        <span class="articles-single--item--edit">
           <?php edit_post_link(__('Edit'), ''); ?>
         </span>
       </p>

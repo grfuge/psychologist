@@ -1,9 +1,19 @@
 .home-contact-fill {
-  background: url("../img/background/intro-bg__micro.jpg") no-repeat;
+  background-image: url("../img/background/intro-bg__micro.jpg");
   background-size: cover;
+  background-position: center bottom;
   height: 640px;
   padding: 32px 0 0 0 !important;
   text-align: center;
+  @include screenSmall {
+    background-image: url("../img/background/intro-bg__medium.jpg");
+  }
+  @include screenLarge {
+    background-image: url("../img/background/intro-bg__full.jpg");
+  }
+  @include screenFull {
+    background-position: center center;
+  }
 }
 
 .home-contact {
@@ -36,8 +46,18 @@
     color: #fff;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+    @include screenSmall {
+      max-width: 640px;
+      margin: 64px auto 16px auto;
+      display: block;
+    }
     .link {
       margin-bottom: 16px;
+    }
+    &--links {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
     }
   }
 }

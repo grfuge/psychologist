@@ -1,7 +1,7 @@
-<div class="sidebar"> <?php get_search_form(); ?> <div class="sidebar--section--container"><div class="sidebar--section"><div class="sidebar--section--title"><img src="" alt="">&ensp;Categories</div><ul> <?php
-          wp_list_categories( array(
-            'orderby'    => 'name',
-            'show_count' => true,
-            'title_li'   => ''
-          ));
-        ?> </ul></div></div></div>
+<div class="sidebar"> <?php get_search_form(); ?> <h4 class="sidebar--title">Categories</h4><ul class="sidebar--list"> <?php
+      wp_list_categories( array(
+        'orderby'    => 'name',
+        'show_count' => false,
+        'title_li'   => ''
+      ));
+    ?> </ul></div>

@@ -1,0 +1,37 @@
+.articles {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  min-height: calc(100vh - 144px);
+  a {
+    color: $color-link;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &--posts {
+    &--items {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 64px;
+      &--item {
+        &--link {
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+        &--info {
+          margin-top: 0;
+          margin-bottom: 8px;
+          color: #777;
+        }
+        &--excerpt {
+          p {
+            margin-top: 0;
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,9 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans";
-  @include screenMedium {
-    padding-top: 96px;
-  }
 }
 
 h1 {
@@ -28,4 +25,28 @@ p {
   background: $color-main;
   text-decoration: none;
   border-radius: 4px;
+  transition: background 60ms;
+  &:hover {
+    background: $color-secondary;
+  }
+}
+
+.summary {
+  width: 80%;
+  margin: 16px auto;
+  position: relative;
+  @include screenMedium {
+    width: 640px;
+  }
+  &:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: $color-secondary;
+    left: -10%;
+    @include screenMedium {
+      left: -32px;
+    }
+  }
 }

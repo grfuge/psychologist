@@ -19,11 +19,6 @@
       </div>
 
       <div class="home-services--items--item">
-        <img src="<?php bloginfo('template_url'); ?>/img/people/personality-disorders.jpg" alt="">
-        <p>Personality Disorders</p>
-      </div>
-
-      <div class="home-services--items--item">
         <img src="<?php bloginfo('template_url'); ?>/img/people/eating-disorders.jpg" alt="">
         <p>Eating Disorders</p>
       </div>

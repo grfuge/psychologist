@@ -11,6 +11,9 @@
   &--items {
     display: flex;
     flex-wrap: wrap;
+    @include screenMedium {
+      flex-wrap: nowrap;
+    }
     &--item {
       display: flex;
       flex-wrap: wrap;
@@ -20,6 +23,11 @@
       p {
         &:first-of-type {
           margin-bottom: 4px;
+          @include screenMedium {
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0 32px;
+          }
         }
         &:last-of-type {
           margin-top: 4px;

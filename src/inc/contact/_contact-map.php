@@ -1,13 +1,42 @@
-<div class="container home-contact">
-  <h1>Location</h1>
-  <div class="container home-contact--section">
-    <ul class="home-contact--section--item">
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
+<section class="container-fill contact-form-fill">
+  <div class="container home-contact contact-form--location">
+    <h1>Location</h1>
+    <div class="container home-contact--section contact--section">
+      <table class="home-contact--section--item">
+        <tr>
+          <td>
+            <img src="<?php bloginfo('template_url'); ?>/img/icons/location.png" alt="">
+          </td>
+          <td>12345 Street St. City, CA 54321</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="<?php bloginfo('template_url'); ?>/img/icons/phone.png" alt="">
+          </td>
+          <td>(123) 456-7890</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="<?php bloginfo('template_url'); ?>/img/icons/email.png" alt="">
+          </td>
+          <td>drjohndoe@email.com</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="<?php bloginfo('template_url'); ?>/img/icons/skype.png" alt="">
+          </td>
+          <td>drjohndoe@email.com</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <a href="" class="link">Schedule a Consultation</a>
+          </td>
+        </tr>
+      </table>
 
-    <div class="home-contact--section--item map"></div>
+      <div class="map"></div>
+
+    </div>
   </div>
-</div>
+</section>

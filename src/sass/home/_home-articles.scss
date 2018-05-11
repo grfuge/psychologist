@@ -7,8 +7,9 @@
 .home-articles {
   text-align: center;
   &--items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 256px);
+    grid-gap: 16px;
     justify-content: center;
     &--item {
       &:hover p {
@@ -23,6 +24,7 @@
         color: #fff;
         line-height: 48px;
         margin-top: 0;
+        margin-bottom: 0;
         transition: background 30ms;
       }
     }

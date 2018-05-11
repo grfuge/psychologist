@@ -1,5 +1,5 @@
 <section class="container-fill article-fill">
-  <div class="container article">
+  <div class="container article about-section">
     <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae accusantium odit sit, dolor sapiente reprehenderit
       rem quidem cum blanditiis, ipsum debitis. Vel qui aperiam delectus natus ipsum ab eum?</p>

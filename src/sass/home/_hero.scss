@@ -6,6 +6,11 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 64px;
+    @include screenMedium {
+      flex-wrap: nowrap;
+      max-width: 960px;
+      margin: auto;
+    }
     h1 {
       margin-bottom: 8px;
     }
@@ -15,11 +20,24 @@
     p {
       &:first-of-type {
         margin-bottom: 8px;
+        max-width: 608px;
+        box-sizing: border-box;
+        padding: 0 16px;
+        @include screenLarge {
+          padding: 0 48px;
+        }
       }
       &:last-of-type {
         margin-top: 8px;
         margin-bottom: 32px;
       }
+    }
+    &--text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
     }
   }
 }

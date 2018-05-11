@@ -1,0 +1,13 @@
+.map {
+  width: 420px;
+  height: 320px;
+  background: #ddd;
+  margin-left: 64px;
+}
+
+.contact--section {
+  @include screenMedium {
+    display: flex;
+    justify-content: center;
+  }
+}

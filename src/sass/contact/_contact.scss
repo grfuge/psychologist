@@ -1,20 +1,94 @@
 .contact-form {
+  &--items {
+    @include screenMedium {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 64px;
+    }
+  }
   &--prices {
+    margin-top: 32px;
+    margin-bottom: 32px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @include screenMedium {
+      width: auto;
+    }
+    &--item {
+      margin: 16px auto;
+      padding: 0 32px;
+      display: block;
+      @include screenMedium {
+        margin: 0 !important;
+        margin-bottom: 16px !important;
+        padding: 0 16px;
+      }
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              box-sizing: border-box;
+              padding-right: 16px;
+            }
+          }
+        }
+      }
+    }
   }
   &--form {
-    label {
-      display: block;
+    margin: auto;
+    width: 296px;
+    margin-bottom: 64px;
+    @include screenMedium {
+      margin: 0;
+      margin-top: 32px;
+      background: #f3f6fa;
+      padding: 16px 32px;
+    }
+    @include screenLarge {
+      margin-left: 32px;
     }
     input,
     textarea {
-      padding: 0;
-      width: 296px;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      border: 1px solid #aaa;
+      border-radius: 2px;
+    }
+    p {
+      display: inline-block;
+      margin-top: 4px;
+      margin-bottom: 0;
     }
     textarea {
       resize: none;
     }
+    &--submit {
+      border: none !important;
+      background: $color-main;
+      color: #fff;
+      width: 128px !important;
+      height: 32px;
+      border-radius: 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
+  &--location {
+    padding-top: 32px !important;
+    padding-bottom: 64px !important;
+    text-align: center;
+    .link {
+      margin-top: 16px;
+    }
+  }
+}
+
+.contact-form-fill {
+  background: #f8f8f8;
 }

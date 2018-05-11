@@ -1,0 +1,16 @@
+.questionnaires {
+  min-height: calc(100vh - 208px);
+  @include screenMedium {
+    min-height: calc(100vh - 144px);
+  }
+  &--items {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin-top: 16px;
+    }
+  }
+}

@@ -9,9 +9,7 @@
     </div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit numquam cumque magni quia repellat odit cupiditate blanditiis,
       omnis totam nihil maxime quam corporis nisi delectus doloremque at? Tenetur voluptas aliquam cum natus nemo, non quisquam!</p>
-    <div class="article--figure">
-      <img src="" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla aspernatur rem aliquid numquam asperiores.</p>
-    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde magni itaque tempora aperiam velit, similique recusandae
+      alias amet, non maxime natus! Totam labore eaque illo id hic provident cumque!</p>
   </div>
 </section>

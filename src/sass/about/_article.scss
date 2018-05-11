@@ -1,5 +1,5 @@
 .article {
-  max-width: 736px;
+  max-width: 832px;
   h2 {
     margin-bottom: 8px;
   }
@@ -16,6 +16,9 @@
     margin-right: 16px;
   }
   &--more {
+    @include screenMedium {
+      display: flex;
+    }
     h3 {
       margin-bottom: 8px;
     }
@@ -24,6 +27,9 @@
     }
     &--item {
       margin-bottom: 32px;
+      @include screenMedium {
+        margin-right: 64px;
+      }
     }
   }
 }
