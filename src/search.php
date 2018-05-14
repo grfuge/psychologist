@@ -1,6 +1,6 @@
 <?php
   include("header.php");
   include("navigation.php");
-  include("inc/testimonials/_emma.php");
+  include("inc/articles/_search.php");
   include("footer.php");
 ?>

@@ -14,6 +14,15 @@
   }
 }
 
+.d {
+  &-flex {
+    display: flex;
+  }
+  &-none {
+    display: none;
+  }
+}
+
 .navigation {
   position: sticky;
   z-index: 1000;
@@ -50,13 +59,9 @@
     &--items {
       height: 64px;
       width: 100%;
-      display: flex;
       align-items: center;
       position: relative;
       text-align: center;
-      &:last-of-type {
-        display: none;
-      }
       @include screenSmall {
         display: none !important;
         flex-wrap: nowrap;
@@ -72,7 +77,9 @@
       }
       a {
         flex-grow: 1;
-        display: block;
+        display: inline-block;
+        margin-left: -4px;
+        word-wrap: normal;
         height: 100%;
         line-height: 64px;
         padding: 0 8px;

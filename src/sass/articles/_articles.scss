@@ -1,8 +1,14 @@
 .articles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-top: 48px;
+  padding-top: 0;
   min-height: calc(100vh - 144px);
+  position: relative;
+  @include screenMedium {
+    padding-top: 48px;
+    flex-wrap: nowrap;
+  }
   a {
     color: $color-link;
     text-decoration: none;
@@ -11,6 +17,10 @@
     }
   }
   &--posts {
+    margin-top: 0;
+    @include screenFull {
+      min-width: 832px;
+    }
     &--items {
       list-style-type: none;
       padding: 0;
@@ -33,5 +43,14 @@
         }
       }
     }
+  }
+}
+
+.page--return {
+  display: none;
+  @include screenMedium {
+    position: absolute !important;
+    top: 8px;
+    color: #888 !important;
   }
 }

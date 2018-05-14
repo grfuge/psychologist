@@ -1,4 +1,6 @@
 .articles-single {
+  position: relative;
+  margin-bottom: 32px;
   a {
     color: $color-link;
     text-decoration: none;
@@ -9,6 +11,14 @@
   div {
     line-height: 1.5rem;
     margin-bottom: 16px;
+  }
+  &--return {
+    display: none;
+    @include screenMedium {
+      position: absolute !important;
+      top: 8px;
+      color: #888 !important;
+    }
   }
   &--item {
     margin-top: 0;
@@ -22,6 +32,20 @@
       position: absolute;
       left: 0;
       bottom: -16px;
+    }
+  }
+  &--entry {
+    padding-bottom: 16px;
+  }
+  &--related {
+    border-top: 1px solid #ddd;
+    &--items {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 2px;
+      &--item {
+        list-style-type: none;
+      }
     }
   }
 }

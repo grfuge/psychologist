@@ -1,8 +1,11 @@
 .map {
-  width: 420px;
+  width: 100%;
   height: 320px;
   background: #ddd;
-  margin-left: 64px;
+  @include screenMedium {
+    width: 420px;
+    margin-left: 64px;
+  }
 }
 
 .contact--section {
