@@ -1,6 +1,6 @@
 <section class="container-fill services-fill">
   <div class="container services">
-    <h1>Techniques Used</h1>
+    <h1>Therapy Techniques</h1>
     <div class="services--items">
 
       <div class="services--items--item">

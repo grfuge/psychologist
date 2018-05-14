@@ -1,4 +1,4 @@
-<section class="container articles"> <?php get_sidebar(); ?> <div class="container articles--posts article container"><h1>Most Recent Articles</h1> <?php
+<section class="page-articles container articles"> <?php get_sidebar(); ?> <div class="container articles--posts article container"><h1>Most Recent Articles</h1> <?php
       if ( get_query_var('paged') ) {
         $paged = get_query_var('paged');
       } elseif ( get_query_var('page') ) {

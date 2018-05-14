@@ -1,7 +1,7 @@
-<section class="container articles articles-single">
+<section class="page-articles container articles articles-single">
   <?php get_sidebar(); ?>
   <div class="articles-single--content article container">
-    <a class="articles-single--return" href="<?php echo esc_url(site_url('/articles')); ?>">&lt; Latest Articles</a>
+    <a class="articles-single--return" href="<?php echo esc_url(site_url('/articles')); ?>">&#9664; Latest Articles</a>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div <?php post_class() ?> id="post-
       <?php the_ID(); ?>">

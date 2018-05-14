@@ -25,6 +25,6 @@
 
     </div>
     <h1>&hellip;and many other topics</h1>
-    <a class="link" href="#">View All Articles</a>
+    <a class="link" href="<?php echo esc_url(site_url('/articles')); ?>">View All Articles</a>
   </div>
 </section>

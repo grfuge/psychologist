@@ -1,4 +1,4 @@
-<section class="container contact-form">
+<section class="page-contact container contact-form">
   <h1>Contact</h1>
   <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam accusantium officia ullam magnam repellendus?</p>
   <div class="contact-form--items">

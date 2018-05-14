@@ -27,12 +27,6 @@
           </td>
           <td>drjohndoe@email.com</td>
         </tr>
-        <tr>
-          <td></td>
-          <td>
-            <a href="" class="link">Schedule a Consultation</a>
-          </td>
-        </tr>
       </table>
 
       <div class="map"></div>

@@ -1,4 +1,4 @@
-<section class="container-fill testimonials-fill">
+<section class="page-testimonials container-fill testimonials-fill">
   <div class="container testimonials">
     <h1>Testimonials</h1>
     <div class="testimonials--items">

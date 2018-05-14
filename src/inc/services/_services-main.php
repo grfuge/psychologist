@@ -1,4 +1,4 @@
-<section class="container services">
+<section class="page-services container services">
   <h1>Issues Treated</h1>
   <div class="services--items">
 

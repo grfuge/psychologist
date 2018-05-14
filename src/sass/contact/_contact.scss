@@ -28,6 +28,7 @@
       table {
         tr {
           td {
+            font-size: 0.95rem;
             &:first-of-type {
               box-sizing: border-box;
               padding-right: 16px;
@@ -60,6 +61,7 @@
       border-radius: 2px;
     }
     p {
+      font-size: 0.95rem;
       display: inline-block;
       margin-top: 4px;
       margin-bottom: 0;
@@ -91,4 +93,5 @@
 
 .contact-form-fill {
   background: #f8f8f8;
+  border-top: 1px solid #ddd;
 }

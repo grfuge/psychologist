@@ -1,4 +1,4 @@
-<section class="container-fill article-fill">
+<section class="page-about container-fill article-fill">
   <div class="container article">
     <h2>John Doe, Ph.D.</h2>
     <h4>Psychologist</h4>

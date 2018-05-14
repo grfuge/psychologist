@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  overflow-x: hidden; }
 
 h1 {
   text-align: center; }
@@ -104,7 +105,8 @@ p {
   height: 64px;
   top: 0;
   font-family: "Open Sans Condensed";
-  font-size: 1.2rem; }
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
   .navigation--container {
     padding: 0 !important;
     height: 100%;
@@ -195,7 +197,8 @@ p {
     .hero--container h1 {
       margin-bottom: 8px; }
     .hero--container h4 {
-      margin-top: 8px; }
+      margin-top: 8px;
+      max-width: 512px; }
     .hero--container p:first-of-type {
       margin-bottom: 8px;
       max-width: 608px;
@@ -217,27 +220,33 @@ p {
 .home-services-fill {
   background: #f8f8f8;
   padding-top: 32px;
-  padding-bottom: 64px; }
+  padding-bottom: 64px;
+  border: 1px solid #ddd; }
 
 .home-services {
   text-align: center; }
+  .home-services a {
+    margin-top: 16px; }
   .home-services--items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 224px);
-    grid-gap: 16px;
-    justify-content: center; }
+    display: block;
+    margin-bottom: 32px; }
+    @media screen and (min-width: 768px) and (min-height: 480px) {
+      .home-services--items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 256px);
+        grid-gap: 16px;
+        justify-content: center; } }
     .home-services--items--item {
-      display: block; }
+      display: block;
+      box-sizing: border-box;
+      padding: 0 16px;
+      width: 256px; }
       .home-services--items--item img {
         display: block; }
       .home-services--items--item p {
-        width: 224px;
-        height: 40px;
-        background: #333;
-        color: #fff;
+        word-break: break-all;
         margin-top: 0;
         text-align: center;
-        line-height: 40px;
         margin-bottom: 0; }
 
 .home-stories {
@@ -272,7 +281,8 @@ p {
 .home-articles-fill {
   background: #f8f8f8;
   padding-top: 32px;
-  padding-bottom: 64px; }
+  padding-bottom: 64px;
+  border: 1px solid #ddd; }
 
 .home-articles {
   text-align: center; }
@@ -404,7 +414,7 @@ p {
       padding-top: 48px;
       flex-wrap: nowrap; } }
   .articles a {
-    color: #2b89d6;
+    color: #006fca;
     text-decoration: none; }
     .articles a:hover {
       text-decoration: underline; }
@@ -419,12 +429,16 @@ p {
       margin-bottom: 64px; }
       .articles--posts--items--item--link {
         font-weight: bold;
-        font-size: 1.2rem; }
+        font-size: 1.1rem; }
       .articles--posts--items--item--info {
+        font-size: 0.96rem;
+        line-height: 1.5rem;
         margin-top: 0;
         margin-bottom: 8px;
         color: #777; }
       .articles--posts--items--item--excerpt p {
+        font-size: 0.96rem;
+        line-height: 1.5rem;
         margin-top: 0;
         margin-bottom: 32px; }
 
@@ -432,6 +446,8 @@ p {
   display: none; }
   @media screen and (min-width: 768px) and (min-height: 480px) {
     .page--return {
+      font-size: 0.95rem;
+      display: block;
       position: absolute !important;
       top: 8px;
       color: #888 !important; } }
@@ -440,7 +456,7 @@ p {
   position: relative;
   margin-bottom: 32px; }
   .articles-single a {
-    color: #2b89d6;
+    color: #006fca;
     text-decoration: none; }
     .articles-single a:hover {
       text-decoration: underline; }
@@ -451,10 +467,17 @@ p {
     display: none; }
     @media screen and (min-width: 768px) and (min-height: 480px) {
       .articles-single--return {
+        font-size: 0.95rem;
+        display: block;
         position: absolute !important;
         top: 8px;
         color: #888 !important; } }
   .articles-single--item {
+    font-size: 0.96rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #777;
     margin-top: 0;
     margin-bottom: 32px;
     position: relative; }
@@ -479,7 +502,7 @@ p {
 
 .sidebar {
   padding-top: 0;
-  width: 192px !important;
+  width: 160px !important;
   position: relative;
   display: block; }
   @media screen and (min-width: 768px) and (min-height: 480px) {
@@ -510,6 +533,7 @@ p {
     list-style-type: none;
     margin-top: 0;
     padding-left: 0;
+    font-size: 0.967rem;
     line-height: 1.2rem; }
     .sidebar--list li {
       margin-bottom: 2px; }
@@ -564,13 +588,17 @@ p {
     .services--items {
       display: flex;
       justify-content: center; } }
-  @media screen and (min-width: 900px) and (min-height: 480px) {
-    .services--items--item {
-      margin: 0 16px;
-      box-sizing: border-box;
-      padding: 0 32px;
-      background: #f3f3f3;
-      max-width: 420px; } }
+  .services--items--item {
+    margin-bottom: 48px; }
+    .services--items--item:last-of-type {
+      margin-bottom: auto; }
+    @media screen and (min-width: 900px) and (min-height: 480px) {
+      .services--items--item {
+        margin: 0 16px;
+        box-sizing: border-box;
+        padding: 8px 32px;
+        background: #fff;
+        max-width: 420px; } }
 
 .services-sechedule-fill {
   background-image: url("../img/background/rocks__micro.jpg");
@@ -625,9 +653,11 @@ p {
         margin: 0 !important;
         margin-bottom: 16px !important;
         padding: 0 16px; } }
-    .contact-form--prices--item table tr td:first-of-type {
-      box-sizing: border-box;
-      padding-right: 16px; }
+    .contact-form--prices--item table tr td {
+      font-size: 0.95rem; }
+      .contact-form--prices--item table tr td:first-of-type {
+        box-sizing: border-box;
+        padding-right: 16px; }
 
 .contact-form--form {
   margin: auto;
@@ -651,6 +681,7 @@ p {
     border: 1px solid #aaa;
     border-radius: 2px; }
   .contact-form--form p {
+    font-size: 0.95rem;
     display: inline-block;
     margin-top: 4px;
     margin-bottom: 0; }
@@ -674,7 +705,8 @@ p {
     margin-top: 16px; }
 
 .contact-form-fill {
-  background: #f8f8f8; }
+  background: #f8f8f8;
+  border-top: 1px solid #ddd; }
 
 .map {
   width: 100%;
@@ -693,7 +725,8 @@ p {
 .testimonials-fill {
   background: #f8f8f8;
   padding-top: 32px;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  border-top: 1px solid #ddd; }
 
 .testimonials h1 {
   margin-bottom: 48px; }

@@ -2,28 +2,35 @@
   background: #f8f8f8;
   padding-top: 32px;
   padding-bottom: 64px;
+  border: 1px solid #ddd;
 }
 
 .home-services {
   text-align: center;
+  a {
+    margin-top: 16px;
+  }
   &--items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 224px);
-    grid-gap: 16px;
-    justify-content: center;
+    display: block;
+    margin-bottom: 32px;
+    @include screenMedium {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 256px);
+      grid-gap: 16px;
+      justify-content: center;
+    }
     &--item {
       display: block;
+      box-sizing: border-box;
+      padding: 0 16px;
+      width: 256px;
       img {
         display: block;
       }
       p {
-        width: 224px;
-        height: 40px;
-        background: #333;
-        color: #fff;
+        word-break: break-all;
         margin-top: 0;
         text-align: center;
-        line-height: 40px;
         margin-bottom: 0;
       }
     }

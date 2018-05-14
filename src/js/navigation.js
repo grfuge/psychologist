@@ -28,15 +28,25 @@
   /**
    * Active Navigation Items
    */
-  const pages = ["/", "/about", "/services", "/articles", "/contact", "/testimonials", "/questionnaires"];
-  const page = window.location.pathname;
+  const pages = [
+    document.querySelector(".page-home"),
+    document.querySelector(".page-about"),
+    document.querySelector(".page-services"),
+    document.querySelector(".page-articles"),
+    document.querySelector(".page-contact"),
+    document.querySelector(".page-testimonials"),
+    document.querySelector(".page-questionnaires")
+  ];
   const link = document.getElementsByClassName("link-mobile");
   const linkDesktop = document.getElementsByClassName("link-desktop");
 
-  for (i = 0; i < pages.length; i++) {
-    if (page.includes(pages[i])) {
+  pages.forEach(function (page, i) {
+    if (page !== null) {
       link[i].classList.add("active");
       linkDesktop[i].classList.add("active");
+      if (window.innerWidth < 568 && i >= 4) {
+        rightMenu();
+      }
     }
-  }
+  });
 })();

@@ -1,4 +1,4 @@
-<section class="container-fill questionnaires-fill">
+<section class="page-questionnaires container-fill questionnaires-fill">
   <div class="container questionnaires">
     <h1>Questionnaires</h1>
     <p class="summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error provident, deserunt aspernatur a totam.</p>

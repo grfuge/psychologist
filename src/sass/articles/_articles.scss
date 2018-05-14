@@ -28,15 +28,19 @@
       &--item {
         &--link {
           font-weight: bold;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
         &--info {
+          font-size: 0.96rem;
+          line-height: 1.5rem;
           margin-top: 0;
           margin-bottom: 8px;
           color: #777;
         }
         &--excerpt {
           p {
+            font-size: 0.96rem;
+            line-height: 1.5rem;
             margin-top: 0;
             margin-bottom: 32px;
           }
@@ -49,6 +53,8 @@
 .page--return {
   display: none;
   @include screenMedium {
+    font-size: 0.95rem;
+    display: block;
     position: absolute !important;
     top: 8px;
     color: #888 !important;

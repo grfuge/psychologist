@@ -1,4 +1,4 @@
-<section class="container articles"> <?php get_sidebar(); ?> <div class="container articles--posts article container"><a class="page--return" href="<?php echo esc_url(site_url('/articles')); ?>">&lt; Latest Articles</a><h1> <?php single_cat_title(); ?> </h1> <?php
+<section class="page-articles container articles"> <?php get_sidebar(); ?> <div class="container articles--posts article container"><a class="page--return" href="<?php echo esc_url(site_url('/articles')); ?>">&#9664; Latest Articles</a><h1> <?php single_cat_title(); ?> </h1> <?php
       if ( get_query_var('paged') ) {
         $paged = get_query_var('paged');
       } elseif ( get_query_var('page') ) { // 'page' is used instead of 'paged' on Static Front Page

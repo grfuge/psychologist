@@ -1,4 +1,4 @@
-<section class="container articles">
+<section class="page-articles container articles">
   <?php get_sidebar(); ?>
   <div class="container articles--posts article container">
     <h1>Most Recent Articles</h1>
