@@ -1,37 +1,86 @@
 .services-fill {
-  background: #f3f3f3;
+  background: #f8f8f8;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.services-bg {
+  background-image: url("../img/background/rocks__micro.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  @include screenSmall {
+    background-image: url("../img/background/rocks__medium.jpg");
+  }
   @include screenLarge {
-    background: none;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-image: url("../img/background/rocks__full.jpg");
+  }
+  @include screenFull {
+    background-position: center center;
+  }
+  .services {
+    position: relative;
+    color: #fff !important;
+    padding: 0;
+    margin: auto;
+    overflow: visible !important;
+    &--container {
+      box-sizing: border-box;
+      padding: 16px 32px;
+      background: rgba(0, 0, 0, 0.65);
+      &:before {
+        content: "";
+        position: absolute;
+        width: calc((100vw - 100%) / 2);
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        top: 0;
+        left: calc((100vw - 100%) / -2);
+        z-index: 1000;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: calc((100vw - 100%) / 2);
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        top: 0;
+        right: calc((100vw - 100%) / -2);
+        z-index: 1000;
+      }
+      @include screenLarge {
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    &--summary {
+      color: #ddd;
+    }
   }
 }
 
 .services {
   padding-top: 32px;
-  padding-bottom: 64px;
-  text-align: center;
-  @include screenLarge {
-    padding-bottom: 32px;
-    &:last-of-type {
-      padding-bottom: 80px;
+  padding-bottom: 32px;
+  h2 {
+    &:first-of-type {
+      border-bottom: 1px solid $color-secondary;
     }
   }
-  &--items {
-    @include screenLarge {
-      display: flex;
-      justify-content: center;
-    }
-    &--item {
-      margin-bottom: 48px;
-      &:last-of-type {
-        margin-bottom: auto;
-      }
-      @include screenLarge {
-        margin: 0 16px;
-        box-sizing: border-box;
-        padding: 8px 32px;
-        background: #fff;
-        max-width: 420px;
-      }
-    }
+  h4 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  &--summary {
+    font-size: 0.97rem;
+    color: #666;
   }
 }

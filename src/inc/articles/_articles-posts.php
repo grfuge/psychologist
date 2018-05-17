@@ -50,10 +50,12 @@
         endwhile;
         if ($query->max_num_pages > 1) : ?>
           <nav class="prev-next-posts">
-            <div class="prev-posts-link">
+            <?php if ($paged != $query->max_num_pages) : ?>
+            <div class="prev-posts-link posts-link">
               <?php echo get_next_posts_link( '&lt;&ensp;Older Articles', $query->max_num_pages ); ?>
             </div>
-            <div class="next-posts-link">
+            <?php endif ?>
+            <div class="next-posts-link posts-link">
               <?php echo get_previous_posts_link( 'Newer Articles&ensp;&gt;' ); ?>
             </div>
           </nav>

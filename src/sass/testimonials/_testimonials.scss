@@ -5,34 +5,28 @@
   border-top: 1px solid #ddd;
 }
 
-.testimonials {
-  h1 {
-    margin-bottom: 48px;
+.stories {
+  padding-bottom: 32px;
+  h2 {
+    text-align: center;
   }
-  &--items {
-    display: flex;
-    flex-wrap: wrap;
-    @include screenMedium {
-      flex-wrap: nowrap;
+  &--item {
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    &:first-of-type {
+      margin-top: 32px;
     }
-    &--item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 32px;
-      p {
-        &:first-of-type {
-          margin-bottom: 4px;
-          @include screenMedium {
-            text-align: center;
-            box-sizing: border-box;
-            padding: 0 32px;
-          }
-        }
-        &:last-of-type {
-          margin-top: 4px;
-        }
+    h4 {
+      margin-bottom: 8px;
+    }
+    p {
+      &:first-of-type {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      &:nth-of-type(2) {
+        margin-top: 4px;
       }
     }
   }

@@ -6,7 +6,7 @@
   min-height: calc(100vh - 144px);
   position: relative;
   @include screenMedium {
-    padding-top: 48px;
+    padding-top: 32px;
     flex-wrap: nowrap;
   }
   a {
@@ -47,6 +47,14 @@
         }
       }
     }
+  }
+}
+
+.prev-next-posts {
+  display: flex;
+  flex-wrap: nowrap;
+  .prev-posts-link {
+    margin-right: 16px;
   }
 }
 

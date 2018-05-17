@@ -3,6 +3,9 @@
   h1 {
     margin-bottom: 48px;
   }
+  h2 {
+    text-align: center;
+  }
   &--container {
     display: flex;
     flex-wrap: wrap;
@@ -20,14 +23,19 @@
       h4 {
         box-sizing: border-box;
         padding: 0 32px;
-        @include screenLarge {
-          margin-top: 0;
-        }
       }
       p {
+        text-align: left;
         max-width: 480px;
         box-sizing: border-box;
         padding: 0 32px;
+        &:first-of-type {
+          margin-bottom: 8px;
+        }
+        &:last-of-type {
+          margin-top: 8px;
+          margin-bottom: 24px;
+        }
       }
     }
   }

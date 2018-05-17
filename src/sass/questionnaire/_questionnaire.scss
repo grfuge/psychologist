@@ -1,7 +1,11 @@
 .questionnaires {
   min-height: calc(100vh - 208px);
+  padding-top: 32px;
   @include screenMedium {
     min-height: calc(100vh - 144px);
+  }
+  h2 {
+    text-align: center;
   }
   &--items {
     text-align: center;

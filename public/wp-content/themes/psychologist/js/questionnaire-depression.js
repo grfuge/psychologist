@@ -1,0 +1,1 @@
+!function(){let e=document.querySelectorAll(".questionnaire--answers--input");document.addEventListener("click",function(){let n=0;(e=document.querySelectorAll(".questionnaire--answers--input")).forEach(e=>{e.checked&&(n+=Number(e.value))}),n=Math.round(n/21*100)/5,console.log(n)})}();
